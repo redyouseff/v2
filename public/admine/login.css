@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.page {
+    width: inherit;
+    height: 713px;
+    background-color: #f0f8ff8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: row wrap;
+}
+
+.logo {
+    background-image: url(جامعة\ المنوفية.png);
+    /* background-color: red; */
+    background-size: cover;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 10px;
+}
+
+form {
+    width: inherit;
+    height: 60%;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user-name,
+.password {
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    border: #147499 solid 1px;
+}
+
+label {
+    color: #044057;
+    align-self: flex-start;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px #147499 solid;
+    border-radius: 50px;
+    width: 176px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    background-color: #147499;
+    color: white;
+}

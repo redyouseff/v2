@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addDE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="name"><i class="fa-solid fa-circle-user" style="color: #858c99;"> marwan salah sharif elemhy</i>
+        </div>
+        <div class="email"><i class="fa-solid fa-envelope" style="color: #858c99;"> marwanelmey7@gmail.com</i></div>
+        <div class="partition"><i class="fa-solid fa-building style=" color: #858c99;"> cs</i></div>
+        <div class="university"></div>
+    </header>
+    <!-- -**************************************************************** -->
+    <div class="container">
+        <div class="partition">
+            <form action="/admine/adddepartment" method="post">
+                <h2>add partition</h2>
+                <div class="box1">
+                    <label for="name">
+                        <h3>partition name</h3>
+                    </label>
+                    <input type="text" id="name" placeholder="type your subject name" name="name">
+                    
+                </div>
+                <div class="box2">
+                    <label for="code">
+                        <h3>partition code</h3>
+                    </label>
+                    <input type="text" id="code" placeholder="type your subject code" name="code">
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="save">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+        <div class="subject">
+            <form action="/admine/adddsubject" method="post">
+                <form action="">
+                    <h2>add subjects</h2>
+                    <div class="any">
+                        <div class="box3">
+                            <label for="name">
+                                <h3>subject name</h3>
+                            </label>
+                            <input type="text" id="name" placeholder="type your subject name" name="name">
+                        </div>
+                        <div class="box4">
+                            <label for="code">
+                                <h3>subject code</h3>
+                            </label>
+                            <input type="text" id="code" placeholder="type your subject code" name="code">
+                        </div>
+                        <div class="box5">
+                            <label for="code">
+                                <h3>partition</h3>
+                            </label>
+                         <select name="department">
+                                {{#each department}}
+                                <option value={{_id}}> {{name}}</option>
+
+                       {{/each }}
+                            </select>
+                        </div>
+                        <div class="box6">
+                            <label for="code">
+                                <h3>subjects you need</h3>
+                            </label>
+                            <input type="text" id="code" placeholder="type your subjects" name="needed">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="save">
+                        <input type="reset">
+                    </div>
+                </form>
+        </div>
+        </form>
+    </div>
+    </div>
+
+    <!-- ********************************************************* -->
+    <footer><i class="fa-solid fa-building-columns"> elmenufia university</i><i class="fa-solid fa-calendar-days">
+            2023</i></footer>
+</body>
+
+</html>
+
+
+
+<!-- marwan salah sharif elemhy 
+view subjects
+view or remove quiz 
+view marks
+-->
